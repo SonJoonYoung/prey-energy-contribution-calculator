@@ -1,0 +1,273 @@
+{
+  "program_release": "PECC 1.0.0",
+  "database_records": 187,
+  "lookup_entries": 384,
+  "lookup_reconstruction": "384/384 recommended ED values reproduced",
+  "validation_targets": 128,
+  "design": "Internal leave-one-taxon-out validation: all records belonging to each target species were removed before rebuilding fallback estimates.",
+  "final_algorithm": "Exact taxon > Genus > Family > Ecological energy proxy > Broad taxonomic group",
+  "actual_hierarchy": {
+    "targets": 128,
+    "predicted": 127,
+    "coverage_pct": 99.21875,
+    "mae_kJ_g": 1.0145669291338582,
+    "rmse_kJ_g": 1.41753279066074,
+    "mape_pct": 22.058025057405583,
+    "bias_kJ_g": -0.16236220472440943,
+    "selected_level_counts": {
+      "Family": 48,
+      "Ecological proxy": 44,
+      "Genus": 27,
+      "Broad": 8,
+      "No fallback": 1
+    }
+  },
+  "selected_level_metrics": {
+    "Genus": {
+      "n": 27,
+      "mae_kJ_g": 0.7614814814814815,
+      "rmse_kJ_g": 0.9261039458497726,
+      "mape_pct": 14.681342116888835,
+      "bias_kJ_g": 0.0,
+      "median_abs_error_kJ_g": 0.625
+    },
+    "Family": {
+      "n": 48,
+      "mae_kJ_g": 1.2571875,
+      "rmse_kJ_g": 1.771174427933812,
+      "mape_pct": 21.266760987009125,
+      "bias_kJ_g": -0.26302083333333326,
+      "median_abs_error_kJ_g": 0.925
+    },
+    "Ecological proxy": {
+      "n": 44,
+      "mae_kJ_g": 0.9253409090909088,
+      "rmse_kJ_g": 1.268466549170153,
+      "mape_pct": 27.943470324627636,
+      "bias_kJ_g": -0.15829545454545457,
+      "median_abs_error_kJ_g": 0.6000000000000001
+    },
+    "Broad": {
+      "n": 8,
+      "mae_kJ_g": 1.0328571428571431,
+      "rmse_kJ_g": 1.154420850470053,
+      "mape_pct": 22.093674782065197,
+      "bias_kJ_g": -0.12875000000000006,
+      "median_abs_error_kJ_g": 0.9500000000000002
+    }
+  },
+  "forced_level_metrics": {
+    "Genus": {
+      "n": 27,
+      "coverage_pct": 21.09375,
+      "mae_kJ_g": 0.7614814814814815,
+      "rmse_kJ_g": 0.9261039458497726,
+      "mape_pct": 14.681342116888835,
+      "bias_kJ_g": 0.0,
+      "median_abs_error_kJ_g": 0.625
+    },
+    "Family": {
+      "n": 75,
+      "coverage_pct": 58.59375,
+      "mae_kJ_g": 1.0861333333333334,
+      "rmse_kJ_g": 1.5323750628789718,
+      "mape_pct": 18.93859258307695,
+      "bias_kJ_g": -0.21666666666666662,
+      "median_abs_error_kJ_g": 0.75
+    },
+    "Ecological proxy": {
+      "n": 119,
+      "coverage_pct": 92.96875,
+      "mae_kJ_g": 1.0911344537815126,
+      "rmse_kJ_g": 1.4891225350419448,
+      "mape_pct": 24.202813082251495,
+      "bias_kJ_g": -0.31289915966386544,
+      "median_abs_error_kJ_g": 0.8199999999999994
+    },
+    "Broad taxonomic group": {
+      "n": 127,
+      "coverage_pct": 99.21875,
+      "mae_kJ_g": 1.0273228346456693,
+      "rmse_kJ_g": 1.4261868934743829,
+      "mape_pct": 22.535062849645705,
+      "bias_kJ_g": -0.13377952755905526,
+      "median_abs_error_kJ_g": 0.6399999999999997
+    }
+  },
+  "common_subset_metrics": {
+    "Genus": {
+      "n": 27,
+      "mae_kJ_g": 0.7614814814814815,
+      "rmse_kJ_g": 0.9261039458497726,
+      "mape_pct": 14.681342116888835,
+      "bias_kJ_g": 0.0
+    },
+    "Family": {
+      "n": 27,
+      "mae_kJ_g": 0.782037037037037,
+      "rmse_kJ_g": 0.972476316002187,
+      "mape_pct": 14.799626531641964,
+      "bias_kJ_g": -0.1342592592592592
+    },
+    "Ecological proxy": {
+      "n": 27,
+      "mae_kJ_g": 0.8918518518518518,
+      "rmse_kJ_g": 1.0037771259191546,
+      "mape_pct": 16.965301782368662,
+      "bias_kJ_g": -0.15925925925925924
+    },
+    "Broad taxonomic group": {
+      "n": 27,
+      "mae_kJ_g": 0.7029629629629629,
+      "rmse_kJ_g": 0.9539032872788947,
+      "mape_pct": 13.031506484441664,
+      "bias_kJ_g": -0.21777777777777793
+    }
+  },
+  "lower_fallback_group_reference": [
+    {
+      "broad_group": "Annelida",
+      "energy_proxy_group": "Other benthic polychaetes",
+      "n_actual_lower_cases": 5,
+      "proxy_mae_kJ_g": 1.111,
+      "broad_mae_kJ_g": 1.31,
+      "proxy_mape_pct": 59.03725728317751,
+      "broad_mape_pct": 48.24638474009932,
+      "proxy_wins": 3,
+      "broad_wins": 2,
+      "ties": 0
+    },
+    {
+      "broad_group": "Crustacea",
+      "energy_proxy_group": "Benthic decapods",
+      "n_actual_lower_cases": 3,
+      "proxy_mae_kJ_g": 1.4133333333333333,
+      "broad_mae_kJ_g": 1.3866666666666667,
+      "proxy_mape_pct": 35.61992052521436,
+      "broad_mape_pct": 43.65313306304079,
+      "proxy_wins": 1,
+      "broad_wins": 2,
+      "ties": 0
+    },
+    {
+      "broad_group": "Crustacea",
+      "energy_proxy_group": "Decapods (ecology unspecified)",
+      "n_actual_lower_cases": 4,
+      "proxy_mae_kJ_g": 0.6699999999999998,
+      "broad_mae_kJ_g": 0.6049999999999999,
+      "proxy_mape_pct": 15.311925463351466,
+      "broad_mape_pct": 13.601153415807186,
+      "proxy_wins": 0,
+      "broad_wins": 4,
+      "ties": 0
+    },
+    {
+      "broad_group": "Mollusca (non-cephalopods)",
+      "energy_proxy_group": "Benthic bivalves",
+      "n_actual_lower_cases": 2,
+      "proxy_mae_kJ_g": 0.29999999999999993,
+      "broad_mae_kJ_g": 0.29999999999999993,
+      "proxy_mape_pct": 18.936453858687596,
+      "broad_mape_pct": 18.936453858687596,
+      "proxy_wins": 0,
+      "broad_wins": 0,
+      "ties": 2
+    },
+    {
+      "broad_group": "Mollusca (non-cephalopods)",
+      "energy_proxy_group": "Subtidal benthic molluscs",
+      "n_actual_lower_cases": 1,
+      "proxy_mae_kJ_g": 0.21999999999999997,
+      "broad_mae_kJ_g": 0.3899999999999999,
+      "proxy_mape_pct": 12.499999999999998,
+      "broad_mape_pct": 22.159090909090903,
+      "proxy_wins": 1,
+      "broad_wins": 0,
+      "ties": 0
+    },
+    {
+      "broad_group": "Teleostei",
+      "energy_proxy_group": "Coastal surface-dwelling fishes",
+      "n_actual_lower_cases": 1,
+      "proxy_mae_kJ_g": 0.019999999999999574,
+      "broad_mae_kJ_g": 0.23000000000000043,
+      "proxy_mape_pct": 0.34305317324184514,
+      "broad_mape_pct": 3.9451114922813106,
+      "proxy_wins": 1,
+      "broad_wins": 0,
+      "ties": 0
+    },
+    {
+      "broad_group": "Teleostei",
+      "energy_proxy_group": "Demersal flatfishes",
+      "n_actual_lower_cases": 2,
+      "proxy_mae_kJ_g": 0.7699999999999996,
+      "broad_mae_kJ_g": 0.36999999999999966,
+      "proxy_mape_pct": 13.06921675774134,
+      "broad_mape_pct": 6.320582877959922,
+      "proxy_wins": 0,
+      "broad_wins": 2,
+      "ties": 0
+    },
+    {
+      "broad_group": "Teleostei",
+      "energy_proxy_group": "Other demersal fishes",
+      "n_actual_lower_cases": 5,
+      "proxy_mae_kJ_g": 0.44599999999999973,
+      "broad_mae_kJ_g": 0.48599999999999993,
+      "proxy_mape_pct": 7.5074259000219,
+      "broad_mape_pct": 8.930048781625683,
+      "proxy_wins": 3,
+      "broad_wins": 2,
+      "ties": 0
+    },
+    {
+      "broad_group": "Teleostei",
+      "energy_proxy_group": "Small pelagic forage fishes",
+      "n_actual_lower_cases": 1,
+      "proxy_mae_kJ_g": 0.009999999999999787,
+      "broad_mae_kJ_g": 1.1400000000000006,
+      "proxy_mape_pct": 0.14836795252225204,
+      "broad_mape_pct": 16.913946587537097,
+      "proxy_wins": 1,
+      "broad_wins": 0,
+      "ties": 0
+    },
+    {
+      "broad_group": "Teleostei",
+      "energy_proxy_group": "Unclassified teleosts",
+      "n_actual_lower_cases": 20,
+      "proxy_mae_kJ_g": 1.1809999999999998,
+      "broad_mae_kJ_g": 1.283,
+      "proxy_mape_pct": 32.58395262899739,
+      "broad_mape_pct": 39.13725997229701,
+      "proxy_wins": 11,
+      "broad_wins": 9,
+      "ties": 0
+    }
+  ],
+  "revalidation_of_auto_switch": {
+    "original_hierarchy": {
+      "n": 127,
+      "coverage_pct": 99.21875,
+      "mae_kJ_g": 1.0145669291338582,
+      "rmse_kJ_g": 1.41753279066074,
+      "mape_pct": 22.058025057405583
+    },
+    "rejected_auto_switch": {
+      "n": 127,
+      "coverage_pct": 99.21875,
+      "mae_kJ_g": 1.0324803149606299,
+      "rmse_kJ_g": 1.4571594225331574,
+      "mape_pct": 22.79922360104709
+    },
+    "wilcoxon_p": 0.26374924749426143,
+    "conclusion": "Automatic validation-informed Proxy/Broad switching was tested and rejected. It slightly worsened aggregate MAE, RMSE, and MAPE and did not significantly improve paired absolute error. Validation is therefore displayed as reference and uncertainty information only."
+  },
+  "limitations": [
+    "Validation is internal to the current literature-derived ED database.",
+    "The results do not demonstrate a universal monotonic accuracy gradient across fallback levels.",
+    "Energy density may vary with species, size, life stage, season, region, and analytical method.",
+    "Reported ED min-max ranges and derived %E bounds are sensitivity scenarios, not confidence intervals."
+  ]
+}

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use PECC v1.0.0, please cite this software and the associated manuscript."
+title: "Prey Energy Contribution Calculator (PECC)"
+type: software
+version: "1.0.0"
+date-released: 2026-09-07
+authors:
+  - family-names: "Son"
+    given-names: "Joon-Young"
+    orcid: "https://orcid.org/0009-0004-0145-1468"
+repository-code: "https://github.com/SonJoonYoung/prey-energy-contribution-calculator"
+abstract: >-
+  PECC is a literature-derived prey energy-density database and hierarchical
+  assignment workflow for estimating energetic contributions of prey in fish
+  stomach-content studies.
+keywords:
+  - prey energy density
+  - stomach contents
+  - feeding ecology
+  - trophic ecology
+  - bioenergetics
+  - diet analysis
+  - PECC
